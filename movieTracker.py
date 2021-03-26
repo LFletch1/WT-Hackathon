@@ -17,7 +17,7 @@ def list(movie_list):
         i = 1
         for movie in movie_list:
             row = movie
-            print(str(i) + ". " + row[0] + " (" + str(row[1]) + ")" + " Main Character: " + row[2])
+            print(str(i) + ". " + row[0] + " (" + str(row[1]) + ")" + " Main Character: " + row[2] + " Setting: " + row[3])
             i += 1
         print()
 
@@ -26,10 +26,12 @@ def add(movie_list):
     name = input("Name: ")
     year = input("Year: ")
     character = input("Main Character: ")
+    setting = input("Setting: ")
     movie = []
     movie.append(name)
     movie.append(year)
     movie.append(character)
+    movie.append(setting)
     movie_list.append(movie)
     print(movie[0] + " was added.\n")
 
